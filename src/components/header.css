@@ -1,0 +1,9 @@
+/* Header */
+.quill-header {
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+}
+.quill-header-selected {
+  background: #fdf1cb;
+}

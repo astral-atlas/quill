@@ -1,0 +1,10 @@
+/** Quill */
+.atlas-quill {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.atlas-quill-heading {
+  text-align: center;
+  width: 100%;
+}

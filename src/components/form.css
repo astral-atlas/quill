@@ -1,0 +1,22 @@
+/* Form */
+.quill-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #b7ffd2;
+  border: 1px solid black;
+}
+.quill-form-text-input {
+  border: 1px solid black;
+  margin: 0.5em;
+  height: 2em;
+  padding: 0.5em;
+}
+.quill-form-submit {
+  height: 2em;
+  margin: 0.5em;
+  font-family: monospace;
+}
+.quill-form-label {
+  text-align: center;
+  margin: 0.5em;
+}

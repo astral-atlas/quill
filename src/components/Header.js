@@ -1,26 +1,20 @@
-import { jsx } from '../lib/react.js';
-import { css } from '../lib/style.js';
-import { cx } from '../lib/classNames.js';
+// @flow strict
+import { h } from 'preact';
+import cx from 'classnames'
 
-css`
-  .quill-header {
-    text-align: center;
-    margin: 0;
-    padding: 1em;
-  }
-  .quill-header-selected {
-    background: #fdf1cb;
-  }
-`;
+type Props = {
+  selected?: boolean,
+  headerText?: string,
+};
 
 export const Header = ({
   selected = false,
   headerText = '',
-}) => jsx`
-  <h3 className=${cx(
+}: Props) => (
+  <h3 className={cx(
     'quill-header',
     { 'quill-header-selected': selected }
   )}>
-    ${headerText}
-  <//>
-`;
+    {headerText}
+  </h3>
+);

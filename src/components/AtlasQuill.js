@@ -1,30 +1,16 @@
-import { jsx, createContext } from '../lib/react.js';
-import { css } from '../lib/style.js';
+// @flow strict
+import { h } from 'preact';
 
-import { Row } from './Column.js.js';
-import { ClientColumn } from './ClientColumn.js.js';
-css`
-  .atlas-quill {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .atlas-quill-heading {
-    text-align: center;
-    width: 100%;
-  }
-`;
-
-export const ScribeClientContext = createContext(null);
-export const ScribeStreamClientContext = createContext(null);
+import { Row } from './Column';
+import { ClientColumn } from './columns/ClientColumn';
 
 export const AtlasQuill = () => {
-  return jsx`
+  return (
     <main className="atlas-quill">
-      <h1 className="atlas-quill-heading">Atlas Quill<//>
-      <${Row}>
-        <${ClientColumn}/>
-      <//>
-    <//>
-  `;
+      <h1 className="atlas-quill-heading">Atlas Quill</h1>
+      <Row>
+        <ClientColumn />
+      </Row>
+    </main>
+  );
 };

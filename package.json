@@ -2,10 +2,6 @@
   "name": "@astral-atlas/quill",
   "version": "0.0.1",
   "description": "Light React UI for managing the Astral Atlas",
-  "main": "src/index",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "test": "node test"
   },
@@ -20,10 +16,21 @@
   },
   "homepage": "https://github.com/astral-atlas/quill#readme",
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "@astral-atlas/compass": "^2.3.0",
+    "@lukekaalim/http-client": "^1.1.1",
+    "classnames": "^2.2.6",
+    "preact": "^10.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-terser": "^5.1.2"
   }
 }

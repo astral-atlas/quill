@@ -1,22 +1,14 @@
-import { jsx, Fragment } from '../lib/react.js';
-import { css } from '../lib/style.js';
+// @flow strict
+import { h, Fragment } from 'preact';
 
-css`
-  .quill-detail-title {
-    text-align: center;
-    margin: 0.2em;
-    text-decoration: underline;
-  }
-  .quill-detail-description {
-    text-align: center;
-    margin: 0.2em;
-    max-width: 30em;
-  }
-`;
+type Props = {
+  title: string,
+  description: string,
+};
 
-export const Detail = ({ title, description }) => jsx`
-  <${Fragment}>
-    <h4 className="quill-detail-title">${title}</h4>
-    <p className="quill-detail-description">${description}</p>
-  <//>
-`;
+export const Detail = ({ title, description }: Props) => (
+  <Fragment>
+    <h4 className="quill-detail-title">{title}</h4>
+    <p className="quill-detail-description">{description}</p>
+  </Fragment>
+);
