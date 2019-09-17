@@ -1,12 +1,12 @@
 import { jsx, useState, useEffect, useContext } from '../lib/react.js';
 
-import { Column } from './Column.js';
-import { Header } from './Header.js';
-import { Detail } from './Detail.js';
-import { List, ListButton } from './List.js';
-import { Section } from './Section.js';
-import { ScribeStreamClientContext } from './AtlasQuill.js';
-import { ChaptersColumn } from './ChaptersColumn.js';
+import { Column } from './Column.js.js';
+import { Header } from './Header.js.js';
+import { Detail } from './Detail.js.js';
+import { List, ListButton } from './List.js.js';
+import { Section } from './Section.js.js';
+import { ScribeStreamClientContext } from './AtlasQuill.js.js';
+import { ChaptersColumn } from './ChaptersColumn.js.js';
 
 const useUserStream = () => {
   const client = useContext(ScribeStreamClientContext)

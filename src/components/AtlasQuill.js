@@ -1,8 +1,8 @@
 import { jsx, createContext } from '../lib/react.js';
 import { css } from '../lib/style.js';
 
-import { Row } from './Column.js';
-import { ClientColumn } from './ClientColumn.js';
+import { Row } from './Column.js.js';
+import { ClientColumn } from './ClientColumn.js.js';
 css`
   .atlas-quill {
     display: flex;

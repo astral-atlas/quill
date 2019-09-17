@@ -1,0 +1,29 @@
+{
+  "name": "@astral-atlas/quill",
+  "version": "0.0.1",
+  "description": "Light React UI for managing the Astral Atlas",
+  "main": "src/index",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astral-atlas/quill.git"
+  },
+  "author": "luke kaalim <luke@kaal.im>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/astral-atlas/quill/issues"
+  },
+  "homepage": "https://github.com/astral-atlas/quill#readme",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "rollup": "^1.21.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

@@ -1,12 +1,12 @@
 import { jsx, useState } from '../lib/react.js';
 
-import { ScribeClientContext, ScribeStreamClientContext } from './AtlasQuill.js';
-import { Column } from './Column.js';
-import { Header } from './Header.js';
-import { Detail } from './Detail.js';
-import { List, ListButton } from './List.js';
-import { UsersColumn } from './UsersColumn.js';
-import { Form, Submit, TextInput } from './Form.js';
+import { ScribeClientContext, ScribeStreamClientContext } from './AtlasQuill.js.js';
+import { Column } from './Column.js.js';
+import { Header } from './Header.js.js';
+import { Detail } from './Detail.js.js';
+import { List, ListButton } from './List.js.js';
+import { UsersColumn } from './UsersColumn.js.js';
+import { Form, Submit, TextInput } from './Form.js.js';
 
 import { createAtlasStreamClient } from '../services/atlasStreamClient.js';
 import { createAtlasClient } from '../services/atlasClient.js';
