@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/astral-atlas/quill#readme",
   "dependencies": {
-    "@astral-atlas/compass": "^2.3.0",
+    "@astral-atlas/compass": "^2.4.0",
     "@lukekaalim/http-client": "^1.1.1",
     "classnames": "^2.2.6",
     "preact": "^10.0.0-rc.3"
