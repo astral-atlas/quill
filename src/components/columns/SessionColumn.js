@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from 'preact/hooks';
 
 import { CompassContext } from '../context';
 import { Column } from '../Column';
-import { Detail } from '../Detail';
+import { Detail, DetailButton } from '../Detail';
 import { Header } from '../Header';
 import { List, ListButton } from '../List';
 import { Form, Submit, TextInput, DateInput } from '../Form';
@@ -56,7 +56,10 @@ export const SessionColumn = () => {
               onSelect={() => {}}
               selected={false}
             >
+              <Detail title="SessionID" description={session.id} />
               <Detail title="Session" description={session.title} />
+              <Detail title="Start Time" description={new Date(session.startTime).toLocaleString()} />
+              <DetailButton text="Delete Session" onPress={() => void compass.session.deleteSession(session.id)} />
             </ListButton>
           )}
         </List>
