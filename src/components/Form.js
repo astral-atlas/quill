@@ -70,9 +70,6 @@ export const DateInput = ({ labelText, value, onChange }: DateInputProps) => {
   const date = `${dateValue.getFullYear()}-${(dateValue.getMonth() + 1).toString().padStart(2, '0')}-${dateValue.getDate().toString().padStart(2, '0')}`;
   const time = `${dateValue.getHours().toString().padStart(2, '0')}:${dateValue.getMinutes().toString().padStart(2, '0')}`
   
-  console.log('datetime', date, time);
-  console.log(date);
-  console.log(time);
   return (
     <Fragment>
       <Label labelText={labelText} />
@@ -82,7 +79,6 @@ export const DateInput = ({ labelText, value, onChange }: DateInputProps) => {
         value={date}
         onInput={event => {
           const newDate = event.target.value;
-          console.log(newDate)
           const [year, month, date] = newDate.split('-');
           const newDateValue = new Date(dateValue.getTime());
           newDateValue.setFullYear(year, month - 1, date);
@@ -95,10 +91,9 @@ export const DateInput = ({ labelText, value, onChange }: DateInputProps) => {
         value={time}
         onInput={event => {
           const newTime = event.target.value;
-          console.log(newTime)
           const [hour, minutes] = newTime.split(':');
           const newTimeValue = new Date(dateValue.getTime());
-          newTimeValue.setHours(hour, minutes);
+          newTimeValue.setHours(hour, minutes, 0, 0);
           onChange(newTimeValue.getTime());
         }}
       />
